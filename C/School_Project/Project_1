@@ -1,0 +1,61 @@
+#include <stdio.h>
+
+int main(){
+
+    char ch = '\0';
+
+    printf("Please enter a sentence from your keyboard : \n");
+    do{
+        ch = getchar();
+
+        if (ch == '\n') continue;
+
+        if(ch>=97 && ch<=122){  //Kanei ta mikra kefalaia.
+            ch = ch-32;
+        }
+
+        if (ch>=49 && ch<=57){
+            for(int i; ch>=49 && ch<=57; i++){ //metatrepei ta noumera se  *
+                printf("*");
+                ch = ch - 1;
+                if(ch<49){
+                    break;
+                }
+            }
+            continue;
+        }
+
+        switch (ch){
+            case 'A' : printf("Alpha"); break;
+            case 'B' : printf("Bravo"); break;
+            case 'C' : printf("Charlie"); break;
+            case 'D' : printf("Delta"); break;
+            case 'E' : printf("Echo"); break;
+            case 'F' : printf("Foxtrot"); break;
+            case 'G' : printf("Golf"); break;
+            case 'H' : printf("Hotel"); break;
+            case 'I' : printf("India"); break;
+            case 'J' : printf("Juliett"); break;
+            case 'K' : printf("Kilo"); break;
+            case 'L' : printf("Lima"); break;
+            case 'M' : printf("Mike"); break;
+            case 'N' : printf("November"); break;
+            case 'O' : printf("Oscar"); break;
+            case 'P' : printf("Papa"); break;
+            case 'Q' : printf("Quebec"); break;
+            case 'R' : printf("Romeo"); break;
+            case 'S' : printf("Sierra"); break;
+            case 'T' : printf("Tango"); break;
+            case 'U' : printf("Uniform"); break;
+            case 'V' : printf("Victor"); break;
+            case 'W' : printf("Whiskey"); break;
+            case 'X' : printf("Xray"); break;
+            case 'Y' : printf("Yankee"); break;
+            case 'Z' : printf("Zulu"); break;
+            default: putchar(ch); continue;
+        }
+        printf(" ");
+    }while (ch != '.'); 
+
+    return 0;
+}
