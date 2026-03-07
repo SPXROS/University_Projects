@@ -65,9 +65,8 @@ and then use std::fixed and std::setprecision(2)
 4. For errors we can use std::cerr
 That's it rest is similar to C.
 
-Grade for 2nd program : 8/10 *.
-
 *needed some help with ai on 1,3,4
+
 
 
 */
