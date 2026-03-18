@@ -1,4 +1,3 @@
-// A.M. : 25390025
 
 #include <iostream>
 #include <stdlib.h>
